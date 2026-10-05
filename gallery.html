@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My dog's Photo Gallery</title>
+    <title>Photo Gallery</title>
     
     <style>
         body {
@@ -12,22 +12,29 @@
             font-family: "Times New Roman", Times, serif;
             padding: 30px 20px;
         }
+        nav {
+            margin-bottom: 20px;
+        }
         nav a {
             font-size: 18px;
             font-weight: bold;
             color: #333;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px;
             padding: 8px 16px;
             background-color: white;
             border-radius: 5px;
+        }
+        h2 {
+            margin-top: 40px;
+            color: #222;
         }
         .gallery-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            margin-top: 30px;
+            margin-top: 15px;
         }
         .gallery-container img {
             width: 280px;
@@ -40,21 +47,38 @@
 </head>
 <body>
 
-   <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav>
         <a href="index.html">Wallace</a>
         <a href="sam.html">Sam</a>
         <a href="gallery.html">Gallery</a>
     </nav>
 
-    <h1>Wallace's Photo Gallery</h1>
-    <p>Here are some more photos of my dogs!</p>
+    <h1>Photo Gallery</h1>
+    <p>Here are some photos of my dogs!</p>
 
-    <!-- Photo Grid -->
+    <!-- Wallace's Section -->
+    <h2>Wallace</h2>
     <div class="gallery-container">
-        <img src="Wallace1.jpg" alt="Wallace with ball">
-        <img src="Wallace2.jpg" alt="Wallace wearing a hat and muzzle">
-        <img src="Wallace3.jpg" alt="Wallace close up">
+        <img src="wallace.jpg" alt="Wallace with ball">
+        <img src="wallace2.jpg" alt="Wallace wearing a hat">
+        <img src="wallace3.jpg" alt="Wallace close up">
+    </div>
+
+    <!-- Sam's Section -->
+    <h2>Sam</h2>
+    <div class="gallery-container">
+        <img src="sam1.jpg" alt="Sam photo 1">
+        <img src="sam2.jpg" alt="Sam photo 2">
+        <img src="sam3.jpg" alt="Sam photo 3">
+    </div>
+
+    <!-- Zeus's Section -->
+    <h2>Zeus</h2>
+    <div class="gallery-container">
+        <img src="zeus1.jpg" alt="Zeus photo 1">
+        <img src="zeus2.jpg" alt="Zeus photo 2">
+        <img src="zeus3.jpg" alt="Zeus photo 3">
     </div>
 
 </body>
